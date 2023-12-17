@@ -1,0 +1,58 @@
+body{
+    background: url(zegna.jpg)  no-repeat  center;
+    height: 100%;
+    width: 100%; 
+}
+header{
+    background-color: black;
+    margin-bottom: 500px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+.nav{
+    margin-top: 20px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+}
+
+.nav ul{
+    width: 500px;
+    margin: 0 auto;
+    list-style-type:none ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav ul li a{
+font-size: 20px;
+font-weight: 600;
+text-decoration: none;
+text-transform: uppercase;
+color: rgb(255, 255, 255);
+}
+.nav ul li::after{
+    content: '';
+    height: 5px;
+    width: 0;
+    background: #ed9b04;
+    bottom: -10px;
+    left:0;
+    transition: 0.5s;
+    position: absolute;
+}
+.nav ul li:hover::after{
+    width: 100%;
+}
