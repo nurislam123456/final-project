@@ -1,6 +1,5 @@
 body{
     
-<<<<<<< HEAD
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -10,6 +9,29 @@ body{
     float: right;
     cursor: pointer;
     border: #fff;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+.footer-section a {
+    text-transform: lowercase;
+    text-decoration: none;
+    color: gold;
+}
+.footer-section a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: aliceblue;
 }
 p{
     color: #fff;
@@ -88,72 +110,63 @@ color: rgb(255, 255, 255);
 .nav ul li:hover::after{
     width: 100%;
 }
-=======
-    background: url(https://www.zegnagroup.com/wp-content/uploads/2020/07/GLanding_M_02_01_v2.jpg?w=1536)  no-repeat  center;
-    height: 100vh;
-}
-
-body::before{
-    padding: 0;
-    content: '';
- display: block;
- width: 100%;
- height: 100%;
- position: absolute;
- top: 0;
- left: 0;
- right: 0;
- bottom: 0;
- background-color:rgba(0, 0, 0, 0.7);
-
-}
-
-    
-.content{
-    width: 100%;
-    position:absolute;
-    top:50%;
-    transform: translateY(-50%);
-    text-align: center;
-    color: azure;
-}
-.content h1{
-    font-size:70px;
-    margin-top: 80px;
-}
-.content p{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    line-height: 25px;
-}
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid rgb(216, 110, 5);
-    background: transparent;
-    color: #fff;
-    cursor: pointer;
-    position: relative;
-    }
-    span{
-        background: #ed9b04;
-        width: 0;
-     height: 100%;
-        border-radius: 25px;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: -1;
-        transition: 0.5s;
-    }
-    button:hover span{
-        width: 100%;
-    }
-    button:hover{
-        border: none;
-    }
->>>>>>> 59aed0cc36375f5e3da1d1fc058dee87aca25566
+.accordion{
+    width: 700px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .item{
+    box-shadow:0 0 32px rgb(101, 100, 100) ;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 24px;
+    row-gap: 32px;
+    align-items: center;
+  }
+  
+  .number,
+  .text{
+    font-size: 24px;
+    font-weight: 500;
+    color:#d76508
+  }
+  
+  .number{
+    color:rgb(102, 74, 74);
+  }
+  .icon{
+    width: 24px;
+    height: 24px;
+    stroke:rgb(212, 126, 7);
+  }
+  .hidden-box{
+    grid-column: 2;
+    display: none;
+  }
+  .hidden-box p{
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+  .hidden-box ul{
+    color: rgb(20, 18, 178);
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .open{
+    border-top: 4px solid #c6780b;
+  }
+  
+  .open .hidden-box{
+    display: block;
+  }
+  
+  .open .number,
+  .open .text{
+    color:#b95108;
+  }
